@@ -39,7 +39,9 @@ const getByQuery = (query) => {
     return axios
         .get(url)
         .then(res => res.data.result.slice(0, maxSize))
-        .then(res => res.map(joke => filterJoke(joke)));
+        .then(res => res.map(joke => filterJoke(joke)))
+        .catch(() => []);
+
 };
 
 export default {getRandom, getCategories, getByCategory, getByQuery};
