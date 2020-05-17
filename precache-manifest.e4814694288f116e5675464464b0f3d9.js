@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf164ec590ac5a551fb1dc515156a12f",
+    "revision": "41803868ac2c90f7847a093f3bad9bf3",
     "url": "/JokeFinder/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JokeFinder/static/css/2.a85e43eb.chunk.css"
   },
   {
-    "revision": "6da5d2a6044b6cb11b89",
-    "url": "/JokeFinder/static/css/main.3e8c9993.chunk.css"
+    "revision": "2f93a9f0210c7961eb63",
+    "url": "/JokeFinder/static/css/main.92911dfb.chunk.css"
   },
   {
     "revision": "0884bce439c24bb264ff",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JokeFinder/static/js/2.00d626ff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6da5d2a6044b6cb11b89",
+    "revision": "2f93a9f0210c7961eb63",
     "url": "/JokeFinder/static/js/main.ec63f0c2.chunk.js"
   },
   {
