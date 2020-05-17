@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/JokeFinder/static/css/main.63df6264.chunk.css",
-    "main.js": "/JokeFinder/static/js/main.312ce923.chunk.js",
-    "main.js.map": "/JokeFinder/static/js/main.312ce923.chunk.js.map",
+    "main.js": "/JokeFinder/static/js/main.c22ef2c8.chunk.js",
+    "main.js.map": "/JokeFinder/static/js/main.c22ef2c8.chunk.js.map",
     "runtime-main.js": "/JokeFinder/static/js/runtime-main.731edce8.js",
     "runtime-main.js.map": "/JokeFinder/static/js/runtime-main.731edce8.js.map",
     "static/css/2.a85e43eb.chunk.css": "/JokeFinder/static/css/2.a85e43eb.chunk.css",
     "static/js/2.00d626ff.chunk.js": "/JokeFinder/static/js/2.00d626ff.chunk.js",
     "static/js/2.00d626ff.chunk.js.map": "/JokeFinder/static/js/2.00d626ff.chunk.js.map",
     "index.html": "/JokeFinder/index.html",
-    "precache-manifest.8da817315a3aeafd419510e768a424f1.js": "/JokeFinder/precache-manifest.8da817315a3aeafd419510e768a424f1.js",
+    "precache-manifest.eaa89aba3077dccd3d3db93489205009.js": "/JokeFinder/precache-manifest.eaa89aba3077dccd3d3db93489205009.js",
     "service-worker.js": "/JokeFinder/service-worker.js",
     "static/css/2.a85e43eb.chunk.css.map": "/JokeFinder/static/css/2.a85e43eb.chunk.css.map",
     "static/css/main.63df6264.chunk.css.map": "/JokeFinder/static/css/main.63df6264.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.a85e43eb.chunk.css",
     "static/js/2.00d626ff.chunk.js",
     "static/css/main.63df6264.chunk.css",
-    "static/js/main.312ce923.chunk.js"
+    "static/js/main.c22ef2c8.chunk.js"
   ]
 }
