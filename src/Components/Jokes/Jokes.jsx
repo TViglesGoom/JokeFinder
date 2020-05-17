@@ -17,13 +17,13 @@ const Jokes = ({jokes, jokesLoaded}) => {
 };
 
 Jokes.propTypes = {
-    jokes: PropTypes.shape({
+    jokes: PropTypes.arrayOf(PropTypes.shape({
         updated_at: PropTypes.string.isRequired,
         id: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
         value: PropTypes.string.isRequired,
         categories: PropTypes.string,
-    })
+    })),
 };
 
 export {Jokes};

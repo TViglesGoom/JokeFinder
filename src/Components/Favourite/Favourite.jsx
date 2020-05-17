@@ -31,7 +31,7 @@ const Favourite = ({favouriteJokes}) => {
                     </CSSTransition>
                 </div>
             </div> :
-            <span></span>
+            <span/>
     );
 };
 
@@ -41,7 +41,7 @@ Favourite.propTypes = {
         id: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
         value: PropTypes.string.isRequired,
-        categories: PropTypes.string,
+        categories: PropTypes.arrayOf(PropTypes.string),
     })).isRequired,
 };
 
