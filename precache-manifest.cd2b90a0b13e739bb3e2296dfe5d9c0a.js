@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c623576501bdd9ccf9056a595025007",
+    "revision": "bf164ec590ac5a551fb1dc515156a12f",
     "url": "/JokeFinder/index.html"
   },
   {
