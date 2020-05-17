@@ -1,0 +1,120 @@
+.CardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 680px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ContentContainer {
+    width: 100%;
+    display: inline-flex;
+}
+
+.faHeart {
+    color: #FF6767;
+    font-size: 20px;
+}
+
+.faComment {
+    color: #ABABAB;
+    font-size: 20px;
+}
+
+.favourBtn {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.commentIconWrapper {
+    min-width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    margin-right: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.line,
+.line::before,
+.line::after {
+    position: absolute;
+    height: 2px;
+    background-color: #ABABAB;
+}
+
+.line {
+    width: 26%;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%);
+}
+
+.line::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    top: -3px;
+}
+.line::after {
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+}
+
+.jokeId {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
+    margin-bottom: 4px;
+}
+
+.jokeContent {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.BootomContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lastUpdate {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
+}
+
+.Category {
+    border-radius: 6px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333;
+    padding: 6px 20px;
+}

@@ -1,0 +1,33 @@
+.Form {
+    margin-bottom: 40px;
+}
+
+.inputField {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+}
+
+.submitBtn {
+    width: 152px;
+    padding: 10px 0;
+    background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+    border: 0;
+    border-radius: 10px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF;
+}

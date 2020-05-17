@@ -1,0 +1,123 @@
+.Favourite {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-width: 480px;
+    z-index: 10;
+}
+
+.HeaderContainer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 5px;
+    z-index: 10;
+    transition: background-color 200ms ease-in-out;
+}
+
+.Burger {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #333;
+    border: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Burger::before,
+.Burger::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    left: 50%;
+    border-radius: 1px;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    transition: transform 300ms ease-out, top 100ms ease-in 310ms;
+}
+
+.Burger::before {
+    top: 36%;
+}
+
+.Burger::after {
+    top: 56%;
+}
+
+.BurgerOpen::before,
+.BurgerOpen::after {
+    top: 46%;
+    transition: transform 300ms ease-in 100ms, top 100ms ease-in;
+}
+
+.BurgerOpen::before {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.BurgerOpen::after {
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.Header {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ABABAB;
+}
+
+.JokesContainer {
+    padding: 88px 20px 20px;
+    background-color: #F8F8F8;
+    top: 0;
+    bottom: 0;
+}
+
+@media (min-width: 1440px) {
+    .Burger {
+        display: none;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+.underOverlay {
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 834px) {
+    .JokesContainer {
+        padding: 88px 40px 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .HeaderContainer {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        right: auto;
+    }
+}

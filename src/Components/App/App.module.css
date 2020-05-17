@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.AppContainer {
+    position: relative;
+    padding: 20px;
+    max-width: 1440px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.JokesContainer {
+    max-width: 680px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Greeting {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.Propmting {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 44px;
+    color: #333;
+    margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 834px) {
+    .AppContainer {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .AppContainer {
+        padding: 40px 140px;
+    }
 }

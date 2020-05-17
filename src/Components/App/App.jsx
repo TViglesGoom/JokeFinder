@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import SearchMethod from "../SearchMethod/SearchMethodContainer";
+import Jokes from "../Jokes/JokesContainer";
+import Favourite from "../Favourite/FavouriteContainer";
+
+
+const App = () => {
+    return (
+        <div className={styles.AppContainer}>
+            <h2 className={styles.Title}>MSI 2020</h2>
+            <p className={styles.Greeting}>Hey!</p>
+            <p className={styles.Propmting}>Let’s try to find a joke for you:</p>
+            <div className={styles.JokesContainer}>
+                <SearchMethod/>
+                <Jokes/>
+            </div>
+            <Favourite/>
+        </div>
+    );
+};
 
 export default App;

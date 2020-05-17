@@ -4,7 +4,7 @@
 
 .enterActive {
     transform: translateX(0);
-    transition: transform 400ms ease-in;
+    transition: transform 400ms ease-in-out;
 }
 
 .exit {
