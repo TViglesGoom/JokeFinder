@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const baseURL = "https://api.chucknorris.io/jokes";
+const maxSize = 50;
 
 const filterJoke = joke => ({
     updated_at: joke.updated_at,
@@ -37,7 +38,7 @@ const getByQuery = (query) => {
     const url = `${baseURL}/search?query=${query}`;
     return axios
         .get(url)
-        .then(res => res.data.result)
+        .then(res => res.data.result.slice(0, maxSize))
         .then(res => res.map(joke => filterJoke(joke)));
 };
 
