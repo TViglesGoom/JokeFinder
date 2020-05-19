@@ -17,8 +17,8 @@ const Favourite = ({favouriteJokes}) => {
         update();
         return () => {
             window.removeEventListener('resize', update);
-        }
-    }, [])
+        };
+    }, []);
     return (
         favouriteJokes.length ?
             <div className={styles.Favourite}>
