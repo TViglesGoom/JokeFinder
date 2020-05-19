@@ -7,19 +7,18 @@ import PropTypes from "prop-types";
 
 const Favourite = ({favouriteJokes}) => {
     const [isOpen, setOpen] = useState(false);
-    const [desktopSize, setDesktopSize] = React.useState(window.innerWidth >= 1440);
+    const [desktopSize, setDesktopSize] = React.useState(false);
 
     useLayoutEffect(() => {
         const update = () => {
             setDesktopSize(window.innerWidth >= 1440);
         };
-
         window.addEventListener('resize', update);
-
+        update();
         return () => {
             window.removeEventListener('resize', update);
-        };
-    }, []);
+        }
+    }, [])
     return (
         favouriteJokes.length ?
             <div className={styles.Favourite}>
