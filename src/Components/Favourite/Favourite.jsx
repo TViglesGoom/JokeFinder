@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useLayoutEffect} from "react";
 import styles from "./Favourite.module.css";
 import JokeCard from "../JokeCard/JokeCardContainer";
 import {CSSTransition} from "react-transition-group";
@@ -7,7 +7,19 @@ import PropTypes from "prop-types";
 
 const Favourite = ({favouriteJokes}) => {
     const [isOpen, setOpen] = useState(false);
-    const desktopSize = window.innerWidth >= 1440;
+    const [desktopSize, setDesktopSize] = React.useState(window.innerWidth >= 1440);
+
+    useLayoutEffect(() => {
+        const update = () => {
+            setDesktopSize(window.innerWidth >= 1440);
+        };
+
+        window.addEventListener('resize', update);
+
+        return () => {
+            window.removeEventListener('resize', update);
+        };
+    }, []);
     return (
         favouriteJokes.length ?
             <div className={styles.Favourite}>
