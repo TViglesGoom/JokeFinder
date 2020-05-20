@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "520fa01837481b2bf852ae6d3361359c",
+    "revision": "824faa15e85ee224166fd662c8a9db47",
     "url": "/JokeFinder/index.html"
   },
   {
-    "revision": "db0567ca654c9babe0ea",
+    "revision": "9568dcd1080be8515674",
     "url": "/JokeFinder/static/css/2.a85e43eb.chunk.css"
   },
   {
-    "revision": "28cdc2b2d6b6bc92e54d",
+    "revision": "46517a98e48a5e6ef93f",
     "url": "/JokeFinder/static/css/main.63df6264.chunk.css"
   },
   {
-    "revision": "db0567ca654c9babe0ea",
-    "url": "/JokeFinder/static/js/2.e20673d9.chunk.js"
+    "revision": "9568dcd1080be8515674",
+    "url": "/JokeFinder/static/js/2.809e1e8f.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/JokeFinder/static/js/2.e20673d9.chunk.js.LICENSE.txt"
+    "url": "/JokeFinder/static/js/2.809e1e8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28cdc2b2d6b6bc92e54d",
-    "url": "/JokeFinder/static/js/main.e1e20247.chunk.js"
+    "revision": "46517a98e48a5e6ef93f",
+    "url": "/JokeFinder/static/js/main.a78be5b6.chunk.js"
   },
   {
-    "revision": "9c5d8406212024441d79",
-    "url": "/JokeFinder/static/js/runtime-main.731edce8.js"
+    "revision": "6e58143c5e36c87b6704",
+    "url": "/JokeFinder/static/js/runtime-main.9e638a07.js"
   },
   {
     "revision": "0b4ac1dc75df35e169b70d7719afe4cc",

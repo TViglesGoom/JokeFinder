@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/JokeFinder/static/css/main.63df6264.chunk.css",
-    "main.js": "/JokeFinder/static/js/main.e1e20247.chunk.js",
-    "main.js.map": "/JokeFinder/static/js/main.e1e20247.chunk.js.map",
-    "runtime-main.js": "/JokeFinder/static/js/runtime-main.731edce8.js",
-    "runtime-main.js.map": "/JokeFinder/static/js/runtime-main.731edce8.js.map",
+    "main.js": "/JokeFinder/static/js/main.a78be5b6.chunk.js",
+    "main.js.map": "/JokeFinder/static/js/main.a78be5b6.chunk.js.map",
+    "runtime-main.js": "/JokeFinder/static/js/runtime-main.9e638a07.js",
+    "runtime-main.js.map": "/JokeFinder/static/js/runtime-main.9e638a07.js.map",
     "static/css/2.a85e43eb.chunk.css": "/JokeFinder/static/css/2.a85e43eb.chunk.css",
-    "static/js/2.e20673d9.chunk.js": "/JokeFinder/static/js/2.e20673d9.chunk.js",
-    "static/js/2.e20673d9.chunk.js.map": "/JokeFinder/static/js/2.e20673d9.chunk.js.map",
+    "static/js/2.809e1e8f.chunk.js": "/JokeFinder/static/js/2.809e1e8f.chunk.js",
+    "static/js/2.809e1e8f.chunk.js.map": "/JokeFinder/static/js/2.809e1e8f.chunk.js.map",
     "index.html": "/JokeFinder/index.html",
-    "precache-manifest.4ae5e0974138905ccb6c99edb5be54c1.js": "/JokeFinder/precache-manifest.4ae5e0974138905ccb6c99edb5be54c1.js",
+    "precache-manifest.94532bbcf4e036cda6f05c6826985b95.js": "/JokeFinder/precache-manifest.94532bbcf4e036cda6f05c6826985b95.js",
     "service-worker.js": "/JokeFinder/service-worker.js",
     "static/css/2.a85e43eb.chunk.css.map": "/JokeFinder/static/css/2.a85e43eb.chunk.css.map",
     "static/css/main.63df6264.chunk.css.map": "/JokeFinder/static/css/main.63df6264.chunk.css.map",
-    "static/js/2.e20673d9.chunk.js.LICENSE.txt": "/JokeFinder/static/js/2.e20673d9.chunk.js.LICENSE.txt",
+    "static/js/2.809e1e8f.chunk.js.LICENSE.txt": "/JokeFinder/static/js/2.809e1e8f.chunk.js.LICENSE.txt",
     "static/media/notifications.css": "/JokeFinder/static/media/notification.c0d3c94c.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.731edce8.js",
+    "static/js/runtime-main.9e638a07.js",
     "static/css/2.a85e43eb.chunk.css",
-    "static/js/2.e20673d9.chunk.js",
+    "static/js/2.809e1e8f.chunk.js",
     "static/css/main.63df6264.chunk.css",
-    "static/js/main.e1e20247.chunk.js"
+    "static/js/main.a78be5b6.chunk.js"
   ]
 }
