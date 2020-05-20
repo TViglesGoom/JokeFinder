@@ -69,22 +69,27 @@ const SearchMethod = ({reset, load}) => {
         e.preventDefault();
         load(false);
         let jokes = [];
-        switch (method) {
-            case Methods.random:
-                jokes = await fetches.getRandom();
-                break;
-            case Methods.fromCategories:
-                jokes = await fetches.getByCategory(categories[activeCategory]);
-                break;
-            case Methods.search:
-                jokes = await fetches.getByQuery(inputValue);
-                break;
-            default:
-                return;
+        if (navigator.onLine) {
+            switch (method) {
+                case Methods.random:
+                    jokes = await fetches.getRandom();
+                    break;
+                case Methods.fromCategories:
+                    jokes = await fetches.getByCategory(categories[activeCategory]);
+                    break;
+                case Methods.search:
+                    jokes = await fetches.getByQuery(inputValue);
+                    break;
+                default:
+                    return;
+            }
+            if (!jokes.length) {
+                NotificationManager.error('Try another query', 'There is no results', 3000);
+            }
+        } else {
+            NotificationManager.error('Connection error', 'You have no connection to the internet.', 3000);
         }
-        if (!jokes.length) {
-            NotificationManager.error('Try another query', 'There is no results', 3000);
-        }
+
         reset(jokes);
         load(true);
     };
