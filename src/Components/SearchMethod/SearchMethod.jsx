@@ -84,7 +84,7 @@ const SearchMethod = ({reset, load}) => {
                     return;
             }
             if (!jokes.length) {
-                NotificationManager.error('Try another query', 'There is no results', 3000);
+                NotificationManager.error('Try another query', 'There are no results', 3000);
             }
         } else {
             NotificationManager.error('Connection error', 'You have no connection to the internet.', 3000);
