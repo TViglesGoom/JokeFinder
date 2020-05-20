@@ -12,7 +12,7 @@ In this app you can get jokes provided by [Chuck Norris Api](https://api.chuckno
 To use this app you can click [here](https://tviglesgoom.github.io/JokeFinder/). First choose a type of searching method,
 if you chose method **From categories**, you must choose the category from the list, if your choice is **Search** you 
 will be able to ask jokes by a query. Then just click a **Get a joke** button.
-Next type of joke will be return depending on a get methods:
+Next type of joke will be returned depending on a get methods:
 * **Random** - random joke
 * **From categories** - random joke, but with a set category
 * **Search** - first **50** jokes, that contain your query  
