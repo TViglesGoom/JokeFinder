@@ -13,9 +13,7 @@ const filterJoke = joke => ({
 
 const getRandom = async () => {
     const url = `${baseURL}/random`;
-    try {
-        const res = await axios.get(url);
-    }
+    const res = await axios.get(url);
     return [filterJoke(res.data)];
 };
 
