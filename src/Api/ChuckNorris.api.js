@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = "https://api.chucknorris.io/jokes";
-const maxSize = 50;
+const countLimit = 50;
 
 const filterJoke = joke => ({
     updated_at: joke.updated_at,
@@ -11,37 +11,32 @@ const filterJoke = joke => ({
     categories: joke.categories,
 });
 
-const getRandom = () => {
+const getRandom = async () => {
     const url = `${baseURL}/random`;
-    return axios
-        .get(url)
-        .then(res => res.data)
-        .then(res => [filterJoke(res)]);
+    const res = await axios.get(url);
+    return [filterJoke(res.data)];
 };
 
-const getCategories = () => {
+const getCategories = async () => {
     const url = `${baseURL}/categories`;
-    return axios
-        .get(url)
-        .then(res => res.data);
+    const res = await axios.get(url);
+    return res.data;
 };
 
-const getByCategory = (category) => {
+const getByCategory = async (category) => {
     const url = `${baseURL}/random?category=${category}`;
-    return axios
-        .get(url)
-        .then(res => res.data)
-        .then(res => [filterJoke(res)]);
+    const res = await axios.get(url);
+    return [filterJoke(res.data)];
 };
 
-const getByQuery = (query) => {
+const getByQuery = async (query) => {
     const url = `${baseURL}/search?query=${query}`;
-    return axios
-        .get(url)
-        .then(res => res.data.result.slice(0, maxSize))
-        .then(res => res.map(joke => filterJoke(joke)))
-        .catch(() => []);
-
+    try {
+        const res = await axios.get(url);
+        return res.data.result.slice(0, countLimit).map(joke => filterJoke(joke));
+    } catch (e) {
+        return [];
+    }
 };
 
 export default {getRandom, getCategories, getByCategory, getByQuery};

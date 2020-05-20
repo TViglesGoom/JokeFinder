@@ -54,11 +54,10 @@ const SearchMethod = ({reset, load}) => {
     const [inputValue, setInputValue] = useState("");
     const [categories, setCategories] = useState([]);
     const classes = useStyles();
-    const handleMethodChange = event => {
+    const handleMethodChange = async event => {
         setMethod(event.target.value);
         if (event.target.value === Methods.fromCategories) {
-            fetches.getCategories()
-                .then(data => setCategories(data));
+            setCategories(await fetches.getCategories());
         }
     };
 
@@ -66,31 +65,28 @@ const SearchMethod = ({reset, load}) => {
         setActiveCategory(newValue);
     };
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault();
         load(false);
-        let neededPromise;
+        let jokes = [];
         switch (method) {
             case Methods.random:
-                neededPromise = fetches.getRandom();
+                jokes = await fetches.getRandom();
                 break;
             case Methods.fromCategories:
-                neededPromise = fetches.getByCategory(categories[activeCategory]);
+                jokes = await fetches.getByCategory(categories[activeCategory]);
                 break;
             case Methods.search:
-                neededPromise = fetches.getByQuery(inputValue);
+                jokes = await fetches.getByQuery(inputValue);
                 break;
             default:
                 return;
         }
-        neededPromise
-            .then(jokes => {
-                if (!jokes.length) {
-                    NotificationManager.error('Try another query', 'There is no results', 3000);
-                }
-                reset(jokes);
-                load(true);
-            });
+        if (!jokes.length) {
+            NotificationManager.error('Try another query', 'There is no results', 3000);
+        }
+        reset(jokes);
+        load(true);
     };
     return (
         <form className={styles.Form}>
@@ -118,7 +114,7 @@ const SearchMethod = ({reset, load}) => {
                 <input className={styles.inputField} placeholder="Free text search..."
                        onInput={e => setInputValue(e.target.value)}/>
             </CSSTransition>
-            <button type="submit" onClick={handleSubmit} value={inputValue} className={styles.submitBtn}>
+            <button type="submit" onClick={handleSubmit} className={styles.submitBtn}>
                 Get a joke
             </button>
             <NotificationContainer enterTimeout={250} leaveTimeout={250}/>
@@ -129,6 +125,6 @@ const SearchMethod = ({reset, load}) => {
 SearchMethod.propTypes = {
     reset: PropTypes.func.isRequired,
     load: PropTypes.func.isRequired,
-}
+};
 
 export {SearchMethod};

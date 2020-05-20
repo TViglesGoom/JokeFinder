@@ -1,18 +1,19 @@
 import {Type} from "./actions";
+import * as lg from "../Api/localStorage";
 
 const changeFavouriteReducer = (jokes, action) => {
     if (jokes === undefined) {
-        jokes = JSON.parse(localStorage.getItem("jokes")) || [];
+        jokes = lg.get("jokes") || [];
     }
     let newJokes;
     switch (action.type) {
         case Type.ADD_JOKE:
             newJokes = [...jokes, action.payload];
-            localStorage.setItem("jokes", JSON.stringify(newJokes));
+            lg.set("jokes", newJokes);
             return newJokes;
         case Type.DELETE_JOKE:
             newJokes = jokes.filter(joke => joke.id !== action.payload);
-            localStorage.setItem("jokes", JSON.stringify(newJokes));
+            lg.set("jokes", newJokes);
             return newJokes;
         default:
             return jokes;
