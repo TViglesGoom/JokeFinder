@@ -19,12 +19,12 @@ Next type of joke will be return depending on a get methods:
 
 Now if you liked a joke you can **like** it by clicking on a heart button. To **unlike** a joke, you may just click filled heart either in a search section or in a favourite section.  
 
+Your favourite jokes will be stored in right part of your screen. If you are using display 1440px+ it will be visible all the time, but only if you have at least one joke in it.
+If you are using screens with lower width, first you must click on a **burger** button to see it. Again, this button will not be able for you, if you have no jokes yet.
+
 You will receive **Notification** in that cases:
 * There are no results to your query
 * You have no connection to the internet
-
-Your favourite jokes will be stored in right part of your screen. If you are using display 1440px+ it will be visible all the time, but only if you have at least one joke in it.
-If you are using screens with lower width, first you must click on a **burger** button to see it. Again, this button will not be able for you, if you have no jokes yet.
 
 ### Using app on your local machine
 
