@@ -5,7 +5,7 @@ import './normalize.css';
 import App from './Components/App/App';
 import store from './redux/store';
 import {Provider} from "react-redux";
-import 'react-notifications/lib/notifications.css';
+import 'react-notifications/lib/notifications.css'
 
 ReactDOM.render(
     <Provider store={store}>
