@@ -20,7 +20,20 @@ const SearchMethod = ({reset, load}) => {
     const [activeCategory, setActiveCategory] = useState(0);
     const [inputValue, setInputValue] = useState("");
     const [categories, setCategories] = useState([]);
+
     const classes = useStyles();
+
+    const TabsStyles = {
+        root: classes.tabsRoot,
+        flexContainer: classes.flexContainer,
+        indicator: classes.indicator,
+    };
+
+    const TabStyles = {
+        root: classes.root,
+        selected: classes.selected,
+    };
+
     const handleMethodChange = async event => {
         setMethod(event.target.value);
         if (event.target.value === Methods.fromCategories) {
@@ -67,17 +80,10 @@ const SearchMethod = ({reset, load}) => {
                 <FormControlLabel value={Methods.fromCategories} control={<Radio/>} label={Methods.fromCategories}/>
                 <CSSTransition in={method === Methods.fromCategories} unmountOnExit timeout={200}
                                classNames={SlideDown}>
-                    <Tabs value={activeCategory} color="primary"
-                          onChange={handleCategoryChange} classes={{
-                        root: classes.tabsRoot,
-                        flexContainer: classes.flexContainer,
-                        indicator: classes.indicator,
-                    }}>
+                    <Tabs value={activeCategory} color="primary" onChange={handleCategoryChange} classes={TabsStyles}>
                         {categories.map((category, index) =>
-                            <Tab key={index} label={category} classes={{
-                                root: classes.root,
-                                selected: classes.selected,
-                            }}/>)}
+                            <Tab key={index} label={category} classes={TabStyles}/>
+                        )}
                     </Tabs>
                 </CSSTransition>
                 <FormControlLabel value={Methods.search} control={<Radio/>} label={Methods.search}/>
